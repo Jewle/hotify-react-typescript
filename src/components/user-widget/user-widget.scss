@@ -1,0 +1,30 @@
+.account-actions-wrapper{
+  background: black;
+  border-radius: 30px;
+  .account-actions{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+
+
+    .account-ava{
+      width: 28px;
+      height: 28px;
+      margin-right: 4px;
+      img{
+        border-radius: 100%;
+      }
+    }
+
+    .account-name{
+      font-size: 13px;
+      align-self: center;
+    }
+
+    .account-item{
+      margin-left: 2px;
+    }
+
+  }
+}
+

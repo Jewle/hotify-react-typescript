@@ -1,0 +1,28 @@
+@import "../../shared";
+
+main{
+	margin-left: $nav-bar-width+9px;
+	position: relative;
+	.main-container{
+		width: 1000px;
+		margin:0 auto;
+	}
+	.section-bg{
+		z-index: -1;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		opacity: 0.8;
+		background: linear-gradient(0deg,hsla(0,0%,100%,0.2),hsla(0,0%,100%,0.2)) #1877f2;
+		content-visibility: auto;
+		background-attachment: fixed;
+		background-position: 50% 15%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		contain: strict;
+
+	}
+	.home-page-wrapper{
+		position: relative;
+	}
+}

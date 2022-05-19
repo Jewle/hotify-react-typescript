@@ -1,0 +1,43 @@
+.playlist-cover{
+  width: 232px;
+  height: 232px;
+}
+.playlist-title-container{
+  position: relative;
+}
+
+.playlist-features{
+
+  display: flex;
+  .playlist-title{
+    align-self: center;
+    margin-left: 20px;
+
+    .playlist-header{
+      font-size: 48px;
+      width: 80%;
+      overflow: hidden;
+    }
+    .playlist-info{
+      display: flex;
+
+      .tracks-count{
+        align-self: center;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.user-container{
+  width: 160px;
+  .account-actions-wrapper{
+    background: none !important;
+  }
+}
+
+.playlist-actions{
+  padding: 48px;
+  
+
+}

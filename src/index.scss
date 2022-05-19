@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
+@import './shared';
+.activated-bg{
+  background-color: $activated-elements-bg;
+}
+button{
+  background: none;
+  border: none;
+  outline: none;
+  &.roundedButton{
+    border-radius: 100%;
+  }
+}
+svg{
+  fill:$svg-color;
+  vertical-align: bottom;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  &::-webkit-scrollbar {
+    width: 1em;
+    position: relative;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+
+
+}
+input.add-tracks-input{
+  background-color: rgba(255,255,255,.1);
+  border: 0;
+  border-radius: 4px;
+  color: rgba(255,255,255,.7);
+  height: 40px;
+  opacity: 1;
+  padding: 8px 32px;
+  text-overflow: ellipsis;
+  width: 470px;
+}
+li{
+  list-style: none;
+}
+a{
+  color: white;
+  font-family: inherit;
+  text-decoration: none;
+
+}
+.title-1{
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -.04em;
+  line-height: 36px;
+  text-transform: none
+}
+
+.added-heart{
+  margin-right: 10px;
+  margin-top: -30px;
+  //display: none;
+}
+body{
+  background-color: $base-color;
+  padding-bottom: 104px;
+}

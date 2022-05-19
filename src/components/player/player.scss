@@ -1,0 +1,97 @@
+@import "../../shared";
+footer button{
+  background: none;
+  border: none;
+  outline: none;
+}
+.track-playback-bar{
+  align-self: center;
+  margin:0px 24px;
+  flex-grow: 1;
+  height: 15px;
+  padding: 2px 0;
+  border: 1px solid white;
+  border-radius: 10px;
+  .progress{
+    height: 100%;
+    width: 20%;
+    border-radius: 10px;
+    background-color: grey;
+  }
+}
+.track-playback-elapsed-time{
+  font-size: 11px;
+}
+
+.footer-player-container{
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  padding: 24px;
+  width: 100%;
+  background: #3a3939;
+}
+
+footer {
+  display: flex;
+  padding: 0 16px;
+  justify-content: space-between;
+
+  .artist-cover {
+    width: 56px;
+    height: 56px;
+  }
+
+  > * {
+    display: flex;
+    width: 30%;
+  }
+
+  .footer-left {
+    justify-content: space-between;
+    svg{
+      fill: #31805a;
+    }
+    .track-data {
+      align-self: center;
+    }
+    .track-misc{
+      align-self: center;
+    }
+    button{
+      margin-left: 16px;
+    }
+  }
+  .footer-middle{
+    flex-direction: column;
+    justify-content: space-between;
+    .track-controls-container{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+    .track-controls{
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .track-playback{
+
+      display: flex;
+
+    }
+    .track-controls{
+      .track-toggle{
+        padding: 10px;
+        border-radius: 100%;
+        background-color: green;
+      }
+    }
+  }
+  .footer-right{
+    justify-content: space-between;
+  }
+}
+
+

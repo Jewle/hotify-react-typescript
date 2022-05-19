@@ -1,0 +1,75 @@
+.search-item{
+  max-width: 800px;
+  height: 300px;
+  margin-top: 3rem;
+  h2{
+    margin-bottom: 2rem;
+  }
+}
+
+.artist-preview{
+  padding: 2rem;
+  height: 100%;
+  position: relative;
+  img{
+    width: 92px;
+    height: 92px;
+    box-shadow: 3px 0px 3px black;
+
+    border-radius: 50%;
+  }
+  p{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+  }
+  .artist-preview-title{
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  &:hover .preview-overlay{
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+  &:hover .preview-play-button{
+    opacity: 1;
+    transition: 0.3s;
+    bottom: 55px;
+  }
+}
+.search-item-content{
+  display: flex;
+  justify-content: space-between;
+}
+.search-tracks{
+  width: 500px;
+  h2{
+    margin-bottom: 2rem;
+  }
+}
+
+
+.preview-overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #686363;
+  opacity: 0
+}
+.preview-play-button{
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+  background-color: green;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 50px;
+  opacity: 0
+}

@@ -1,0 +1,95 @@
+.track-list{
+  position: relative;
+}
+
+.track-list-header{
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: black;
+  font-weight: 200;
+  border-bottom: 1px solid silver;
+  .track-list-header-item{
+    font-size: 12px;
+    width: 167px;
+    text-align: left;
+  }
+
+}
+.track-set{
+  .track-set-item{
+    background-color: black;
+    //&:hover {
+    //  background-color: lightcyan;
+    //  opacity: 0.3;
+    //
+    //}
+  }
+  .track-set-item-data{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    .tdata{
+      padding: 16px 0;
+      width: 167px;
+      font-size: 14px;
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+
+      //justify-content: space-between;
+      .track-title{
+        display: flex;
+        flex-direction: column;
+        .active-track{
+          color: #4e8050;
+        }
+      }
+      .track-data-cover{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+      .band-name{
+        font-size: 12px;
+        color: grey;
+        opacity: 0.9;
+      }
+    }
+    .track-item-play{
+      position: absolute;
+      top: 14px;
+      left:-4px;
+      display: none;
+    }
+    a{
+      text-decoration: underline;
+    }
+    &:hover {
+      .tdata .track-number{
+        display: none;
+      }
+      .track-item-play{
+        display: block;
+      }
+      .tdata .hidden-heart{
+        display: block;
+      }
+
+    }
+
+
+  }
+}
+
+.hidden-heart{
+  display: none;
+}
+.track-misc li{
+  color:black!important;
+}
+
